@@ -26,15 +26,16 @@ function App() {
     <BrowserRouter>
       <ResponsiveAppBar/>
       <Routes>
-        <Route path="/academics" element={<Academics/>}/>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/admission" element={<Admission/>}/>
-          <Route path="/tuition&scholarships" element={<Tuition/>}/>
-          <Route path="/campus" element={<Campus/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path='/student' element={<SignIn/>}/>
-          <Route path='/student_register' element={<SignUp/>}/>
-          <Route path='/admin' element={<AdminSignIn/>}/>
+          <Route path="/college-website-frontend/" element={<Home/>}/>
+          <Route path="" element={<Home/>}/>
+        <Route path="academics" element={<Academics/>}/>
+          <Route path="admission" element={<Admission/>}/>
+          <Route path="tuition&scholarships" element={<Tuition/>}/>
+          <Route path="campus" element={<Campus/>}/>
+          <Route path="about" element={<About/>}/>
+          <Route path='student' element={<SignIn/>}/>
+          <Route path='student_register' element={<SignUp/>}/>
+          <Route path='admin' element={<AdminSignIn/>}/>
         </Routes>    
       <Footer/>
     </BrowserRouter>
