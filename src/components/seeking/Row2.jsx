@@ -2,13 +2,13 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import Boxes from "./Boxes";
 import BoxAnimation from "./BoxesAnimation";
-
+import seek_plus from "../../assets/image/seek_plus.jpeg"
 const Row2 = () => {
   return (
     <>
       <Box
         sx={{py:"20px",
-          backgroundImage: "url('src/assets/image/seek_plus.jpeg')",
+          backgroundImage: `url(${seek_plus})`,
           // height: "400px",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",

@@ -3,11 +3,11 @@ import BannerImg from '../../styles/Bannerimg/bannerimg'
 import AdmissionProcessTab from './AdmissionProcessTab'
 import { Box, Container, Grid, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
-
+import admission from "../../assets/image/admission_bg.jpg"
 const Admission = () => {
   return (
     <>
-      <BannerImg bgimg={"url('src/assets/image/admission_bg.jpg')"} text={"Begin a Life Changing Journey With Us."}/>
+      <BannerImg bgimg={admission} text={"Begin a Life Changing Journey With Us."}/>
       <Box my="0px" pb bgcolor={"lightgrey"}>
         
       <Container maxWidth="lg" >

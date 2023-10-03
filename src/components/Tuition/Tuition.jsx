@@ -2,11 +2,11 @@ import React from 'react'
 import BannerImg from '../../styles/Bannerimg/bannerimg'
 import { Container, Typography } from '@mui/material'
 import CustomizedTables from './Table'
-
+import tuition from "../../assets/image/Tuition_bg.jpg"
 const Tuition = () => {
   return (
     <>
-     <BannerImg bgimg={"url('src/assets/image/Tuition_bg.jpg')"} text={"We make it afforable for you."}/>
+     <BannerImg bgimg={tuition} text={"We make it afforable for you."}/>
      <Container>
      <Typography variant="h4" fontWeight={"bolder"} mt={"60px"}>
         Program's Scholarships & Cost of Attendance

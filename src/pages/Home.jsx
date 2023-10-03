@@ -10,11 +10,11 @@ import Shortcuts from "../components/Shortcuts/Shortcuts";
 import MessageFromPresident from "../components/messagefrompresident/messagefrompresident";
 import GalleryIndex from "../components/Gallery/GalleryIndex";
 import Row2 from "../components/seeking/Row2";
-
+import Homepage from "../assets/image/college_home.jpg"
 const Home = () => {
   return (
    <>
-      <BannerImg bgimg={"url('src/assets/image/college_home.jpg')"} text={"Be the Best Version of Yourself"}/>
+      <BannerImg bgimg={Homepage} text={"Be the Best Version of Yourself"}/>
       {/* <Seeking/> */}
       {/* <Box backgroundColor="#9a76b0"> */}
 

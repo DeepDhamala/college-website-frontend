@@ -1,11 +1,11 @@
 import React from 'react'
 import BannerImg from '../../styles/Bannerimg/bannerimg'
 import { Box, Container, Typography } from '@mui/material'
-
+import about from "../../assets/image/about_bg.jpg"
 const About = () => {
   return (
     <>
-         <BannerImg bgimg={"url('src/assets/image/about_bg.jpg')"} text={"A home of Thousands"}/>
+         <BannerImg bgimg={about} text={"A home of Thousands"}/>
          <Box>
             <Container>
                 <Typography mb="20px" mt="40px" variant="h5" fontWeight={"bolder"}>

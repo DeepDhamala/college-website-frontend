@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import MessageFromPresident from "../messagefrompresident/messagefrompresident";
-
+import academics from "../../assets/image/academics_banner.jpg"
 const Academics = () => {
   const programs = [
     "Department of Electronics",
@@ -22,7 +22,7 @@ const Academics = () => {
   return (
     <>
       <BannerImg
-        bgimg={"url('src/assets/image/academics_banner.jpg')"}
+        bgimg={academics}
         text={"Academics Programs That fits you"}
       />
       <Container maxWidth="lg">

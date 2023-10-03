@@ -3,6 +3,7 @@ import { Box, Container, Grid, Typography } from '@mui/material';
 import { slideInRight, slideInLeft } from '../../animations/Animations';
 import TopicAnimation from '../../animations/Topic';
 import RowAnimation from '../../animations/RowAnimation';
+import professor from "../../assets/image/professor.jpg"
 
 const MessageFromPresident = () => {
   const leftBoxRef = useRef(null);
@@ -55,7 +56,7 @@ const MessageFromPresident = () => {
   // }}
 >
   {/* <img src="src/assets/image/professor.jpg" alt="" style={{ maxWidth: '80%', height: 'auto' }} /> */}
-  <RowAnimation from="left" img="src/assets/image/professor.jpg"/>
+  <RowAnimation from="left" img={professor}/>
 </Grid>
 
           <Grid

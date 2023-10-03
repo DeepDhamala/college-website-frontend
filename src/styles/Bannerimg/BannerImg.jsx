@@ -9,7 +9,7 @@ const BannerImg = ({ bgimg, text }) => {
     <Box
       sx={{
         position: "relative",
-        backgroundImage: `${bgimg}`,
+        backgroundImage: `url(${bgimg})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center 30%",
