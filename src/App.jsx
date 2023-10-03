@@ -2,6 +2,10 @@ import { Container } from '@mui/material'
 import './App.css'
 import ResponsiveAppBar from './components/Header/Header'
 import Home from './pages/Home'
+<<<<<<< HEAD
+=======
+import MessageFromPresident from './components/messagefrompresident/messagefrompresident'
+>>>>>>> 2a60f621165eec52a56f7e77709f4dca3bd45f88
 import Specialities from './components/specialities/Specialities'
 import Seeking from './components/seeking/Seeking'
 import News from './components/news/News'
