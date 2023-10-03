@@ -1,7 +1,7 @@
 import { Container } from '@mui/material'
 import './App.css'
 import ResponsiveAppBar from './components/Header/Header'
-import Home from './pages/home'
+import Home from './pages/Home/Home'
 import MessageFromPresident from './components/messagefrompresident/messagefrompresident'
 import Specialities from './components/specialities/Specialities'
 import Seeking from './components/seeking/Seeking'
