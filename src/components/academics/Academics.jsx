@@ -1,5 +1,5 @@
 import React from "react";
-import BannerImg from "../../styles/Bannerimg/bannerimg";
+import BannerImg from "../../styles/Bannerimg/BannerImg";
 import {
   Box,
   Container,
@@ -8,7 +8,6 @@ import {
   Paper,
   Typography,
 } from "@mui/material";
-import MessageFromPresident from "../messagefrompresident/messagefrompresident";
 import academics from "../../assets/image/academics_banner.jpg"
 const Academics = () => {
   const programs = [

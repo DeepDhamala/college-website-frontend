@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImg from '../../styles/Bannerimg/bannerimg'
+import BannerImg from '../../styles/Bannerimg/BannerImg'
 import AdmissionProcessTab from './AdmissionProcessTab'
 import { Box, Container, Grid, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'

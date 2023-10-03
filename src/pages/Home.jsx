@@ -2,12 +2,12 @@ import React from "react";
 import Box from "@mui/material/Box";
 import { Container, Typography } from "@mui/material";
 import { slideInBottom } from "../animations/Animations";
-import BannerImg from "../styles/Bannerimg/bannerimg";
+import BannerImg from "../styles/Bannerimg/BannerImg";
 import Seeking from "../components/seeking/Seeking";
 import Specialities from "../components/specialities/Specialities";
 import News from "../components/news/News";
 import Shortcuts from "../components/Shortcuts/Shortcuts";
-import MessageFromPresident from "../components/messagefrompresident/messagefrompresident";
+import MessageFromPresident from "../components/MessageFromPresident/messagefrompresident";
 import GalleryIndex from "../components/Gallery/GalleryIndex";
 import Row2 from "../components/seeking/Row2";
 import Homepage from "../assets/image/college_home.jpg"

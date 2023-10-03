@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImg from '../../styles/Bannerimg/bannerimg'
+import BannerImg from '../../styles/Bannerimg/BannerImg'
 import { Box, Container, Typography } from '@mui/material'
 import campus from "../../assets/image/campus_bg.jpg"
 const Campus = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import BannerImg from '../../styles/Bannerimg/bannerimg'
+import BannerImg from '../../styles/Bannerimg/BannerImg'
 import { Container, Typography } from '@mui/material'
 import CustomizedTables from './Table'
 import tuition from "../../assets/image/Tuition_bg.jpg"
