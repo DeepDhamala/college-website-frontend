@@ -9,20 +9,28 @@ import News from "../components/news/News";
 import Shortcuts from "../components/Shortcuts/Shortcuts";
 import MessageFromPresident from "../components/messagefrompresident/messagefrompresident";
 import GalleryIndex from "../components/Gallery/GalleryIndex";
+import Row2 from "../components/seeking/Row2";
 
 const Home = () => {
   return (
    <>
       <BannerImg bgimg={"url('src/assets/image/college_home.jpg')"} text={"Be the Best Version of Yourself"}/>
-      <Seeking/>
-      <Container>
+      {/* <Seeking/> */}
+      {/* <Box backgroundColor="#9a76b0"> */}
+
+      <Row2/>
+      <Box >
+        
+      <Container maxWidth="lg">
       <Specialities/>
       <News/>
       <Shortcuts/>
-      <MessageFromPresident/>
       <GalleryIndex/>
+      <MessageFromPresident/>
       </Container>
+      {/* </Box> */}
      
+       </Box> 
         
       </>
         

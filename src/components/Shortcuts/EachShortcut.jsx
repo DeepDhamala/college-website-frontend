@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Box, Typography } from '@mui/material';
 import { slideInBottom } from '../../animations/Animations';
+import ColAnimation from '../../animations/ColAnimation';
 
 const EachShortcut = ({ logo, title }) => {
   const boxesRef = useRef(null);
@@ -24,20 +25,22 @@ const EachShortcut = ({ logo, title }) => {
   }, []);
 
   return (
-    <Box
-      my="40px"
-      ref={boxesRef}
-      sx={{
-        animation: isVisible ? `${slideInBottom} .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both` : 'none',
-      }}
-    >
+    // <Box
+    //   my="40px"
+    //   ref={boxesRef}
+    //   sx={{
+    //     animation: isVisible ? `${slideInBottom} .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both` : 'none',
+    //   }}
+    // >
+    <>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: 'gray', paddingInline: 'auto' }}>
         {logo}
       </div>
       <Typography variant="h6" my="10px" color="#9c27b0" textAlign="center" fontFamily="Roboto" fontWeight="bolder">
         {title}
       </Typography>
-    </Box>
+      </>
+    // </Box>
   );
 };
 

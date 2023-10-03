@@ -25,17 +25,18 @@ const TopicAnimation = ({text}) => {
   return (
     <>
       <Box mt="40px"
+        borderRadius="10px"
         className="scrollable-content box"
         sx={{
           backgroundColor: '#9c27b0',
           animation: isVisible ? `${slideInLeft} 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both` : 'none',
-          width: '40%',
+          width: {xs:'90%', md:'40%'},
           opacity: isVisible ? 1 : 0,
           transition: 'opacity 0.5s',
         }}
         ref={boxesRef}
       >
-        <Typography variant="h5" color="white" mx="10px" gutterBottom>
+        <Typography variant="h6" color="white" mx="10px" gutterBottom>
           {text}
         </Typography>
       </Box>

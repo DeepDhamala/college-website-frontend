@@ -4,6 +4,7 @@ import { Box, Card, Container, Grid, Typography } from "@mui/material";
 import { useTheme, useMediaQuery } from "@mui/material";
 import { slideInBottom } from "../../animations/Animations";
 import "./seeking.css";
+import BoxAnimation from "./BoxesAnimation";
 
 const Seeking = () => {
   const theme = useTheme();
@@ -92,28 +93,28 @@ const Seeking = () => {
               <Grid item xs={12} md={6}>
                 <Grid container p="10px">
                   <Grid item xs={12} md={6} mt="10px">
-                    <Boxes
+                    <BoxAnimation
                       topic="Apply to C_N"
                       subtitle="lorem haitl dakot lke l"
                       backgcolor="#007a86"
                     />
                   </Grid>
                   <Grid item xs={12} md={6} mt="20px">
-                    <Boxes
+                    <BoxAnimation
                       topic="Tuition & Fees"
                       subtitle="Lorem feits ifti lkje."
                       backgcolor="#63666a"
                     />
                   </Grid>
                   <Grid item xs={12} md={6} mt="20px">
-                    <Boxes
+                    <BoxAnimation
                       topic="Visit C_N"
                       subtitle="Lorem feits ifti lkje."
                       backgcolor="#63666a"
                     />
                   </Grid>
                   <Grid item xs={12} md={6} mt="20px">
-                    <Boxes
+                    <BoxAnimation
                       topic="Scholarships"
                       subtitle="Lorem feits ifti lkje."
                       backgcolor="#8a387c"

@@ -8,6 +8,7 @@ const Specialities = () => {
   
   return (
     <>
+    <Box my="60px">
     {/* <Typography mt={8} variant="h6" fontWeight={"bolder"} color="secondary">College_Name by numbers</Typography> */}
     <TopicAnimation text={"College_Name by Numbers"} />
     <Box width="100%" 
@@ -18,6 +19,7 @@ const Specialities = () => {
        <Counter max="50" text={"Academics Program that suits You well."}/>
        <Counter max="16000" text={"Academics Program that suits You well."}/>
        <Counter max="120" text={"Best Faculty to Guide you."}/>
+    </Box>
     </Box>
     </>
   )

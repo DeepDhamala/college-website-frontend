@@ -42,7 +42,8 @@ const Academics = () => {
           component={Paper}
           elevation={5}
           bgcolor="#9c27b0"
-          width="350px"
+          sx={{width:{xs:"100%", md:"350px"}}}
+          // width="350px"
           borderRadius={"15px"}
           mb="5px"
           mt={"60px"}

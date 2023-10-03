@@ -2,7 +2,7 @@ import { Box, Card, Typography } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import { slideInBottom } from "../../animations/Animations";
 
-const Boxes = ({topic, subtitle, backgcolor}) => {
+const Boxes = ({topic, subtitle, backgcolor, from}) => {
   const boxesRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 

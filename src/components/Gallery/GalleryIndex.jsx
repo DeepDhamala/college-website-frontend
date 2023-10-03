@@ -4,30 +4,49 @@ import { slideInLeft, slideInRight } from "../../animations/Animations";
 import Gallery from "./Gallery";
 
 const GalleryIndex = () => {
-  const leftItemRef = useRef(null);
-  const rightItemRef = useRef(null);
-  const [isLeftVisible, setIsLeftVisible] = useState(false);
-  const [isRightVisible, setIsRightVisible] = useState(false);
+  // const leftItemRef = useRef(null);
+  // const rightItemRef = useRef(null);
+  // const [isLeftVisible, setIsLeftVisible] = useState(false);
+  // const [isRightVisible, setIsRightVisible] = useState(false);
 
-  const handleScroll = () => {
-    if (leftItemRef.current && rightItemRef.current) {
-      const leftElementTop = leftItemRef.current.getBoundingClientRect().top;
-      const rightElementTop = rightItemRef.current.getBoundingClientRect().top;
-      const isLeftVisible = leftElementTop < window.innerHeight;
-      const isRightVisible = rightElementTop < window.innerHeight;
-      setIsLeftVisible(isLeftVisible);
-      setIsRightVisible(isRightVisible);
-    }
-  };
+  // const handleScroll = () => {
+  //   if (leftItemRef.current && rightItemRef.current) {
+  //     const leftElementTop = leftItemRef.current.getBoundingClientRect().top;
+  //     const rightElementTop = rightItemRef.current.getBoundingClientRect().top;
+  //     const isLeftVisible = leftElementTop < window.innerHeight;
+  //     const isRightVisible = rightElementTop < window.innerHeight;
+  //     setIsLeftVisible(isLeftVisible);
+  //     setIsRightVisible(isRightVisible);
+  //   }
+  // };
 
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+
+  const boxesRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+      const observer = new IntersectionObserver((entries) => {
+        const [entry] = entries;
+        setIsVisible(entry.isIntersecting);
+      });
+  
+      if (boxesRef.current) {
+        observer.observe(boxesRef.current);
+      }
+  
+      return () => {
+        if (boxesRef.current) {
+          observer.unobserve(boxesRef.current);
+        }
+      };
+    }, []);
 
   return (
     <>
-      <Box my={"40px"}>
+      <Box my={"60px"}>
         <Typography variant="h5" fontWeight="bolder" my={"10px"} color="secondary">
           Gallery
         </Typography>
@@ -36,9 +55,17 @@ const GalleryIndex = () => {
             item
             xs={12}
             md={6}
-            ref={leftItemRef}
+            // ref={leftItemRef}
+            ref={boxesRef}
             sx={{
-              animation: isLeftVisible ? `${slideInLeft} 1s cubic-bezier(0.250, 0.460, 0.450,0.940) both` : "none",
+              
+              animation: isVisible
+        ? `${slideInLeft} 1.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`
+        : 'none',
+          width: {xs:'100%'},
+          opacity: isVisible ? 1 : 0,
+          transition: 'opacity 0.75s',
+              
             }}
           >
             <Gallery />
@@ -50,9 +77,15 @@ const GalleryIndex = () => {
             display="flex"
             justifyContent="center"
             alignItems="center"
-            ref={rightItemRef}
+            ref={boxesRef}
+            // ref={rightItemRef}
             sx={{
-              animation: isRightVisible ? `${slideInRight} 1s cubic-bezier(0.250, 0.460, 0.450,0.940) both` : "none",
+              animation: isVisible
+        ? `${slideInRight} 1.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both`
+        : 'none',
+          width: {xs:'100%'},
+          opacity: isVisible ? 1 : 0,
+          transition: 'opacity 0.75s',
             }}
           >
             <Box align="center">

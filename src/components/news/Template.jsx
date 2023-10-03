@@ -38,7 +38,7 @@ export default function Template() {
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            N
+            A
           </Avatar>
         }
         action={
@@ -52,7 +52,7 @@ export default function Template() {
       <CardMedia
         component="img"
         height="194"
-        image="https://picsum.photos/300/400"
+        image="src/assets/image/news.jpg"
         alt="Paella dish"
       />
       <CardContent>

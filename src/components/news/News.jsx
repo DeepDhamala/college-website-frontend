@@ -2,6 +2,8 @@ import React, { useRef, useState, useEffect } from 'react';
 import Template from './Template';
 import { Box, Typography } from '@mui/material';
 import { slideInLeft } from '../../animations/Animations';
+import RowAnimation from '../../animations/RowAnimation';
+import TopicAnimation from '../../animations/Topic';
 
 const News = () => {
   const boxesRef = useRef(null);
@@ -26,7 +28,7 @@ const News = () => {
 
   return (
     <>
-      <Box
+      {/* <Box
         className="scrollable-content box"
         sx={{
           backgroundColor: '#9c27b0',
@@ -36,11 +38,14 @@ const News = () => {
           transition: 'opacity 0.5s',
         }}
         ref={boxesRef}
-      >
-        <Typography variant="h5" color="white" mx="10px" gutterBottom>
+      > */}
+      {/* <RowAnimation color="white" text="News/Events" fontWeight={"bold"} from="left" bgColor="#9c27b0" width={{ xs: '65%', md: '40%' }} /> */}
+      <Box my="60px">
+<TopicAnimation text={"News/Events"} />
+        {/* <Typography variant="h5" color="white" mx="10px" gutterBottom>
           News/Events
-        </Typography>
-      </Box>
+        </Typography> */}
+      {/* </Box> */}
       <div style={{ overflowX: 'auto', whiteSpace: 'nowrap' }}>
         <div style={{ display: 'inline-flex' }}>
           <Template />
@@ -51,6 +56,7 @@ const News = () => {
           <Template />
         </div>
       </div>
+      </Box>
     </>
   );
 };
