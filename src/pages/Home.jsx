@@ -7,7 +7,7 @@ import Seeking from "../components/seeking/Seeking";
 import Specialities from "../components/specialities/Specialities";
 import News from "../components/news/News";
 import Shortcuts from "../components/Shortcuts/Shortcuts";
-import MessageFromPresident from "../components/messagefrompresident/MessageFromPresident";
+import MessageFromPresident from "../components/messagefrompresident/messagefrompresident";
 import GalleryIndex from "../components/Gallery/GalleryIndex";
 import Row2 from "../components/seeking/Row2";
 import Homepage from "../assets/image/college_home.jpg"
